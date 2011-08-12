@@ -5,6 +5,9 @@
   "permissions": [
     "http://*/*"
   ],
+  "icons": { "16": "Mustachio16.png",
+             "48": "Mustachio48.png",
+            "128": "Mustachio128.png" },
   "content_scripts": [
       {
         "matches": ["http://*/*"],
