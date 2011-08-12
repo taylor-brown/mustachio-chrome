@@ -1,10 +1,15 @@
 {
   "name": "Mustachio",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Appends moustaches to all faces!",
   "permissions": [
     "http://*/*"
   ],
+  "background_page": "background.html",
+  "browser_action": {
+      "default_icon": "Mustachio19enabled.png",
+      "default_title": "Enable / Disable Mustachio"
+    },
   "icons": { "16": "Mustachio16.png",
              "48": "Mustachio48.png",
             "128": "Mustachio128.png" },
