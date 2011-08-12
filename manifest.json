@@ -1,0 +1,14 @@
+{
+  "name": "Mustachio",
+  "version": "0.0.1",
+  "description": "Appends moustaches to all faces!",
+  "permissions": [
+    "http://*/*"
+  ],
+  "content_scripts": [
+      {
+        "matches": ["http://*/*"],
+        "js": ["jquery.min.js", "mustachio.js"]
+      }
+    ]
+}
