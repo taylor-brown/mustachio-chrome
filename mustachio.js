@@ -1,10 +1,8 @@
 $(function() {
-  $('img').each(function(i,e) {
+  $('img:visible').each(function(i,e) {
+    if (($(this).width() < 300) || ($(this).height() < 300)) return;
     chrome.extension.sendRequest({method: "isEnabled"}, function(response) {
-      if (response.enabled == 'true') {
-        console.log('enabled');
-      } else {
-        console.log("disabled");
+      if (response.enabled != 'true') {
         return;
       }
       var originalImage = e.src;
