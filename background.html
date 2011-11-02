@@ -1,5 +1,5 @@
 <script>
-  if (localStorage['enabled'] !== 'false') localStorage['enabled'] = 'true';
+  localStorage['enabled'] = 'true';
   chrome.browserAction.onClicked.addListener(function(tab) {    
     if (localStorage['enabled'] == 'true') {
       localStorage['enabled'] = 'false';

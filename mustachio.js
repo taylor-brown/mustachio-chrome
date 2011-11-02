@@ -7,7 +7,7 @@ $(function() {
       }
       var originalImage = e.src;
       if (!originalImage) return;
-      var newImage = "http://mustachy.heroku.com/?src=" + originalImage;
+      var newImage = "http://81.91.243.5//?src=" + originalImage;
       $.get(newImage, function() {
         $(e).attr('src', newImage);
       })      
