@@ -7,7 +7,7 @@ $(function() {
       }
       var originalImage = e.src;
       if (!originalImage) return;
-      var newImage = "http://81.91.243.5//?src=" + originalImage;
+      var newImage = "http://mustachify.me/?src=" + originalImage;
       $.get(newImage, function() {
         $(e).attr('src', newImage);
       })      
