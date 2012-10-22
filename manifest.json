@@ -16,7 +16,7 @@
   "content_scripts": [
       {
         "matches": ["http://*/*"],
-        "js": ["jquery.min.js", "mustachio.js", "objectdetect.js", "objectdetect.frontalface.js", "jquery.objectdetect.js"]
+        "js": ["jquery.min.js", "mustachio.js", "objectdetect.js", "objectdetect.frontalface.js", "jquery.objectdetect.js", "canvg.js", "rgbcolor.js"]
       }
     ]
 }
