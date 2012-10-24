@@ -3,7 +3,7 @@
   "version": "0.0.8",
   "description": "Appends moustaches to all faces!",
   "permissions": [
-    "http://*/*"
+    "http://*/*", "https://*/*"
   ],
   "background_page": "background.html",
   "browser_action": {
@@ -15,7 +15,7 @@
             "128": "Mustachio128.png" },
   "content_scripts": [
       {
-        "matches": ["http://*/*"],
+        "matches": ["http://*/*", "https://*/*"],
         "js": ["jquery.min.js", "mustachio.js", "objectdetect.js", "objectdetect.frontalface.js", "jquery.objectdetect.js", "canvg.js", "rgbcolor.js"]
       }
     ]
