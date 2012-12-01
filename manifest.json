@@ -1,6 +1,6 @@
 {
   "name": "Mustachio",
-  "version": "0.0.8",
+  "version": 2,
   "description": "Appends moustaches to all faces!",
   "permissions": [
     "http://*/*", "https://*/*"

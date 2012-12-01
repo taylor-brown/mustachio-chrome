@@ -4,6 +4,7 @@ $(function () {
         if (response.enabled != 'true') {
             return;
         }
+	
         var id = 0;
         $.fn.highlight = function (rect, color) {
             id++;
@@ -26,6 +27,7 @@ $(function () {
         };
             $(function () {
                 $('img:visible').each(function (i, e) {
+		  if($(this).width() < 30 || $(this).height() < 30) return;
                     $(this).objectdetect("all", {classifier: objectdetect.frontalface},
                             function (faces) {
                                 for (var i = 0; i < faces.length; ++i) {
