@@ -1,4 +1,3 @@
-<script>
   localStorage['enabled'] = 'true';
   chrome.browserAction.onClicked.addListener(function(tab) {    
     if (localStorage['enabled'] == 'true') {
@@ -17,5 +16,3 @@
       else
         sendResponse({});
   });
-
-</script>
